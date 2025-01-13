@@ -1,0 +1,11 @@
+[project]
+name = "sample-codes-llm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.2.1",
+    "torch>=2.5.1",
+    "transformers>=4.48.0",
+]
