@@ -1,3 +1,37 @@
+## Additive fine-tuning using BERT
+
+#### The CustomBERTClassifier class:
+
+- Downloads and loads a pretrained BERT model
+- Freezes the original BERT parameters
+- Adds custom classification layers with batch normalization and dropout
+- Uses Xavier initialization for the new layers
+
+
+#### The TextDataset class:
+
+- Handles text data preprocessing
+- Tokenizes input texts using the BERT tokenizer
+- Manages padding and truncation
+
+
+#### The training function includes:
+
+- Learning rate scheduling with ReduceLROnPlateau
+- Proper handling of BERT's special tokens
+- Training and validation phases
+- Progress monitoring
+
+
+#### Best practices implemented:
+
+- Type hints for better code documentation
+- Proper initialization of custom layers
+- Gradient freezing for pretrained weights
+- Batch normalization for better training stability
+- Dropout for regularization
+
+<br/>
 ## LoRA
 The LoRALinear class:
 
